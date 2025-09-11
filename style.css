@@ -41,4 +41,7 @@ input{
 }
 .to-do-list{
     margin-top: 40px;
-    
+    background-color: grey;
+    padding: 10px;
+    border-radius: 30px;
+}
