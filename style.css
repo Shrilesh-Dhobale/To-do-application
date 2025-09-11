@@ -26,11 +26,13 @@ body{
     align-items: center;
     background-color: white;
     border-radius: 30px;
+    padding: 10px;
 }
-input{
+.input-section input{
     padding: 10px;
     border: none;
     border-radius: 30px;
+    outline: none;
 }
 #addTaskButton{
     padding: 10px 20px;
@@ -41,7 +43,21 @@ input{
 }
 .to-do-list{
     margin-top: 40px;
-    background-color: grey;
+    background-color: whitesmoke;
     padding: 10px;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+}
+.label{
+    margin-left:8px;
+    flex:1;
+}
+img{
+    margin-left: auto;
+    width: 15px;
+    margin-right: 5px;
+    
+
 }
