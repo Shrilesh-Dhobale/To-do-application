@@ -5,3 +5,16 @@ body{
     font-family: Arial, sans-serif;
     background-color: black;
 }
+.container{
+    width: 400px;
+    margin: 50px auto ;
+    background-color: rgb(34, 33, 33);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+#title{
+    text-align: center;
+    color: aqua;
+}
