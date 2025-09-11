@@ -7,14 +7,15 @@ body{
 }
 .container{
     width: 400px;
-    margin: 50px auto ;
-    background-color: rgb(34, 33, 33);
+    margin: 20px auto ;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
     
 }
 #title{
+    font-size: 50px;
+    font-weight: bold;
     text-align: center;
     color: aqua;
 }
@@ -23,4 +24,18 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    border-radius: 30px;
+}
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+#addTaskButton{
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
 }
