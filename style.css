@@ -46,7 +46,7 @@ body{
 .to-do-list{
     margin-top: 40px;
     background-color: whitesmoke;
-    padding: 10px;
+    padding: 5px;
     border-radius: 30px;
     display: flex;
     align-items: center;

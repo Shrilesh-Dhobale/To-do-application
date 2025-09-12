@@ -1,0 +1,1 @@
+const todoItems=[Go to Gym , Learn JavaScript, Read a book, Write some code];
