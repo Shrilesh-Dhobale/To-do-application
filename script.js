@@ -11,4 +11,4 @@ const loadCards=()=>{
         
     }
 };
- 
+loadCards();
