@@ -8,7 +8,7 @@ const loadCards=()=>{
         toDoListContainer.innerHTML += `
             <div class="to-do-list">
                 ${todoItem}
-                <img id="deleteButton" src="dustbin.png" alt="Delete Task">
+                <img id="deleteButton" src="bin.png" alt="Delete Task">
             </div>
         `;
     }
