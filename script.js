@@ -1,4 +1,4 @@
-let todoItems=["Gym","Cricket","Swimming"];
+let todoItems=[];
 const loadCards=()=>{
     const storedItems=JSON.parse(localStorage.getItem("Todo Items")|| "[]");
     todoItems=storedItems;
