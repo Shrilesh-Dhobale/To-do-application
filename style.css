@@ -68,3 +68,16 @@ img{
     width: 20px;
     cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+    #title{
+        font-size: 30px;
+    }
+    #addTaskButton{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    
+}

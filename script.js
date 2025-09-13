@@ -12,3 +12,12 @@ const loadCards=()=>{
     }
 };
 loadCards();
+const addTask=()=>{
+    const task=document.getElementById("taskInput");
+    const addtask=task.value;
+
+    todoItems.push(addtask);
+    task.value="";
+    loadCards();
+};
+
