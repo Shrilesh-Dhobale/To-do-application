@@ -22,3 +22,13 @@ const addToDo=()=>{
     
     loadCards();
 }
+
+const deleteToDo=(item)=>{
+    const indexOfItems=todoItems.indexOf(item);
+    if (indexOfItems > -1) {
+        todoItems.splice(indexOfItems, 1);
+        
+        localStorage.setItem("Todo Items",JSON.stringify(todoItems));
+        loadCards();
+    }
+}
