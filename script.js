@@ -1,5 +1,6 @@
 const todoItems=["Gym","Cricket","Swimming"];
 const loadCards=()=>{
+    const storedItems=JSON.parse(localStorage.getItem("Todo Items"));
     const toDoListContainer=document.getElementById("to-do-list-container");
     toDoListContainer.innerHTML="";
     for (const todoItem of todoItems) {
@@ -14,7 +15,6 @@ const loadCards=()=>{
 loadCards();
 const addToDo=()=>{
     const newTaskInput=document.getElementById("taskInput");
-    localStorage.setItem("New Task",newTask);
     todoItems.push(newTaskInput.value);
     localStorage.setItem("Todo Items",JSON.stringify(todoItems));
     newTaskInput.value="";
