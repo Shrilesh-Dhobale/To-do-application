@@ -12,7 +12,7 @@ const loadCards=()=>{
             </div>
         `;
     }
-}
+};
 loadCards();
 const addToDo=()=>{
     const newTaskInput=document.getElementById("taskInput");
@@ -21,7 +21,7 @@ const addToDo=()=>{
     newTaskInput.value="";
     
     loadCards();
-}
+};
 
 const deleteToDo=(item)=>{
     const indexOfItems=todoItems.indexOf(item);
@@ -31,4 +31,4 @@ const deleteToDo=(item)=>{
         localStorage.setItem("Todo Items",JSON.stringify(todoItems));
         loadCards();
     }
-}
+};
