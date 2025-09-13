@@ -21,16 +21,23 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 30px;
-    padding: 2px;
+
+    
 }
 .input-section input{
     padding-left: 10px;
     border: none;
     border-radius: 30px;
+    padding:10px;
+    padding-right: 140px;
     outline: none;
+    font-size: 16px;
 }
+
+
+
 #addTaskButton{
     padding: 10px 20px;
     background-color: aqua;
@@ -42,12 +49,12 @@ body{
 }
 
 .to-do-list-container{
-    margin-top: 20px;
+    margin-top: 40px;
     max-height: 300px;
     overflow-y: scroll;
 }
 .to-do-list{
-    margin-top: 30px;
+    margin-bottom: 20px;
     background-color: whitesmoke;
     padding: 8px;
     border-radius: 30px;
@@ -59,6 +66,7 @@ img{
     margin-left: auto;
     width: 20px;
     margin-right: 5px;
+    cursor: pointer;
     
 
 }
