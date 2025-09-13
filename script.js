@@ -1,8 +1,8 @@
 const todoItems=["Go to Gym", "Learn JavaScript", "Read a book", "Write some code"];
 const loadCards=()=>{
-    const label=document.getElementById("label");
+    const containerElement=document.getElementsByClassName("to-do-list");
     for (const todoItem of todoItems){
-        containerElement.innerHtml+=`
+        containerElement.innerHTML+=`
         <div class="to-do-list">
             <input type="radio" id="${todoItem}">
             <label for="${todoItem}" id="label">${todoItem}</label>
@@ -18,6 +18,7 @@ const addTask=()=>{
 
     todoItems.push(addtask);
     task.value="";
+    localStorage.setItem
     loadCards();
 };
 

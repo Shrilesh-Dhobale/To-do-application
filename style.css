@@ -51,6 +51,8 @@ body{
     display: flex;
     align-items: center;
     background-color: gray;
+    height:200px;
+    overflow-y: scroll;
 }
 .label{
     margin-left:8px;
@@ -80,4 +82,16 @@ img{
         font-size: 14px;
     }
     
+}
+@media screen and (max-width: 400px) {
+    .container{
+        width: 70%;
+    }
+    #title{
+        font-size: 20px;
+    }
+    #addTaskButton{
+        padding: 5px 10px;
+        font-size: 14px;
+}
 }
