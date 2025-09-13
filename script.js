@@ -1,4 +1,4 @@
-const todoItems=["Gym","Cricket","Swimming"];
+let todoItems=["Gym","Cricket","Swimming"];
 const loadCards=()=>{
     const storedItems=JSON.parse(localStorage.getItem("Todo Items"));
     const toDoListContainer=document.getElementById("to-do-list-container");
