@@ -16,6 +16,8 @@ const addToDo=()=>{
     const newTaskInput=document.getElementById("taskInput");
     localStorage.setItem("New Task",newTask);
     todoItems.push(newTaskInput.value);
+    localStorage.setItem("Todo Items",JSON.stringify(todoItems));
     newTaskInput.value="";
+    
     loadCards();
 }
