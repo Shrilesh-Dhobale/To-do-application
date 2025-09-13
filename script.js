@@ -6,7 +6,7 @@ const loadCards=()=>{
     toDoListContainer.innerHTML="";
     for (const todoItem of todoItems) {
         toDoListContainer.innerHTML += `
-            <div class="to-do-list">
+            <div class="to-do-list" onclick="deleteToDo('${todoItem}')">
                 ${todoItem}
                 <img id="deleteButton" src="bin.png" alt="Delete Task">
             </div>
