@@ -1,6 +1,7 @@
 let todoItems=["Gym","Cricket","Swimming"];
 const loadCards=()=>{
-    const storedItems=JSON.parse(localStorage.getItem("Todo Items"));
+    const storedItems=JSON.parse(localStorage.getItem("Todo Items")|| "[]");
+    todoItems=storedItems;
     const toDoListContainer=document.getElementById("to-do-list-container");
     toDoListContainer.innerHTML="";
     for (const todoItem of todoItems) {
