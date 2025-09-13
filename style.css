@@ -9,9 +9,6 @@ body{
     width: 400px;
     margin: 20px auto ;
     padding: 20px;
-    border-radius: 10px;
-    
-    
 }
 #title{
     font-size: 50px;
@@ -43,6 +40,12 @@ body{
     font-size: 18px;
     
 }
+
+.to-do-list-container{
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
 .to-do-list{
     margin-top: 40px;
     background-color: whitesmoke;
@@ -51,12 +54,6 @@ body{
     display: flex;
     align-items: center;
     background-color: gray;
-    height:200px;
-    overflow-y: scroll;
-}
-.label{
-    margin-left:8px;
-    flex:1;
 }
 img{
     margin-left: auto;
@@ -64,11 +61,6 @@ img{
     margin-right: 5px;
     
 
-}
-.to-do-list input{
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
 }
 @media screen and (max-width: 600px) {
     .container{

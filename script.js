@@ -1,24 +1,21 @@
-const todoItems=["Go to Gym", "Learn JavaScript", "Read a book", "Write some code"];
+const todoItems=["Gym","Cricket","Swimming"];
 const loadCards=()=>{
-    const containerElement=document.getElementsByClassName("to-do-list");
-    for (const todoItem of todoItems){
-        containerElement.innerHTML+=`
-        <div class="to-do-list">
-            <input type="radio" id="${todoItem}">
-            <label for="${todoItem}" id="label">${todoItem}</label>
-            <img id="deleteButton" src="dustbin.png" alt="Delete Task">
-        </div>
+    const toDoListContainer=document.getElementById("to-do-list-container");
+    toDoListContainer.innerHTML="";
+    for (const todoItem of todoItems) {
+        toDoListContainer.innerHTML += `
+            <div class="to-do-list">
+                ${todoItem}
+                <img id="deleteButton" src="dustbin.png" alt="Delete Task">
+            </div>
         `;
     }
-};
+}
 loadCards();
-const addTask=()=>{
-    const task=document.getElementById("taskInput");
-    const addtask=task.value;
-
-    todoItems.push(addtask);
-    task.value="";
-    localStorage.setItem
+const addToDo=()=>{
+    const newTaskInput=document.getElementById("taskInput");
+    localStorage.setItem("New Task",newTask);
+    todoItems.push(newTaskInput.value);
+    newTaskInput.value="";
     loadCards();
-};
-
+}

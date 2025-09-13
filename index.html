@@ -4,19 +4,24 @@
     
     <title>To-Do</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
    <div class="container">
         <h1 id="title">To-Do App</h1>
         <div class="input-section">
             <input type="text" id="taskInput" placeholder="Enter a new task">
-            <button id="addTaskButton" onclick="addTask()">Add</button>
+            <button id="addTaskButton" onclick="addToDo()">Add</button>
         </div>
-        <div class="to-do-list">
-            
+        
+        <div class="to-do-list-container" id="to-do-list-container">
+            <div class="to-do-list" id="toDoList">
+                
+                <img src="delete.png" class="delete-icon" onclick="deleteToDo()">
+            </div>
         </div>
+        
    </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
